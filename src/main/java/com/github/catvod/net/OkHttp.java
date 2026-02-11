@@ -115,7 +115,7 @@ public class OkHttp {
 
     public static OkHttpClient.Builder getBuilder() {
         return new OkHttpClient.Builder()
-                // .proxy(new java.net.Proxy(Proxy.Type.HTTP, new InetSocketAddress("localhost",7897)))
+                .proxy(new java.net.Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1",7897)))
                 .addInterceptor(new OkhttpInterceptor()).dns(dns()).connectTimeout(10, TimeUnit.SECONDS)
                 .readTimeout(8, TimeUnit.SECONDS)
                 .writeTimeout(10, TimeUnit.SECONDS)

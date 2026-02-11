@@ -107,8 +107,8 @@ public class Cg51 extends Spider {
     @Override
     public String homeContent(boolean filter) throws Exception {
         List<Class> classes = new ArrayList<>();
-        String[] typeIdList = {"wpcz","mrdg","rdsj","bkdg","whhl","xsxy","whmx"};
-        String[] typeNameList = {"今日吃瓜","每日大瓜","热门吃瓜","必看大瓜","网红黑料","学生学校","明星黑料"};
+        String[] typeIdList = {"wpcz","mrdg","rdsj","bkdg","whhl","xsxy","whmx","thjx"};
+        String[] typeNameList = {"今日吃瓜","每日大瓜","热门吃瓜","必看大瓜","网红黑料","学生学校","明星黑料","探花精选"};
         for (int i = 0; i < typeNameList.length; i++) {
             classes.add(new Class(typeIdList[i], typeNameList[i]));
         }
